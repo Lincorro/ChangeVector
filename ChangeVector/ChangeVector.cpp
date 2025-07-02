@@ -25,10 +25,9 @@ int main()
     std::cin >> deleteNumber;
 
     for (size_t i = 0; i < vec.size(); i++)  
-    { 
-        for (size_t j = 0; j < vec.size(); j++)
-        {
-             if (vec[i] == deleteNumber)
+    {    
+        
+        if (vec[i] == deleteNumber)
              {   
                     int temp = i;
 
@@ -38,9 +37,7 @@ int main()
                         temp++;
                     }
                     vec.pop_back();
-        }
-
-        } 
+             }
     }
 
     for (size_t i = 0; i < vec.size(); i++)
